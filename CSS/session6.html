@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  Pseudo-class */
+        a:hover{
+            text-decoration: none;
+            color:brown;
+
+        }
+        a:link{
+            /* text-decoration: underline dotted yellowgreen; */
+        }
+        a:visited{
+            color: chocolate;
+            text-decoration:overline dashed blue;
+        }
+        /*  Pseudo-elements */
+        a::before{
+            content: '\00A9';
+        }
+        a::after{
+            content: '\00A9';
+        }
+        p{
+            color:red
+        }
+        #abc{
+            color:blue
+        }
+        .xyz{
+            color:orange
+        }
+    </style>
+</head>
+<body>
+    <a href="grid.html">Grid</a> ||
+    <a href="font.html">Font</a>
+    <br>
+    <p id="abc" class="xyz" style="color:chartreuse">Hello</p>
+</body>
+</html>
